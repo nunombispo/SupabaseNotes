@@ -1,9 +1,18 @@
-import Header from "./Header";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { AuthProvider } from '../contexts/Auth'
+import Header from './Header'
 
-function App() {
+export function App() {
   return (
-    <Header/>
-  );
+    <div>
+      <Header/>
+      <Router>
+        <AuthProvider>
+          <Switch>
+            <Route exact path="/" component={} />
+          </Switch>
+        </AuthProvider>
+      </Router>
+    </div>
+  )
 }
-
-export default App;
