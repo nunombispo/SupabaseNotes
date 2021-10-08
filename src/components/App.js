@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { AuthProvider } from '../contexts/Auth'
 import Header from './Header'
 import Notes from './Notes'
+import { Signup } from './SignUp'
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
         <AuthProvider>
           <Switch>
             <Route exact path="/" component={Notes} />
+            <Route path="/signup" component={Signup} />
           </Switch>
         </AuthProvider>
       </Router>
