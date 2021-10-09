@@ -45,6 +45,9 @@ export function Signup() {
                     </div>
                     <button className="w-100 btn btn-lg btn-success mb-3" type="submit">Sign up</button>
                 </form>
+                <p>
+                  Already have an account? <Link to="/signin">Sign In</Link>
+                </p>
             </div>
             <div className="col d-none d-lg-block"></div>
         </div>
