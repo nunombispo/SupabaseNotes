@@ -18,8 +18,7 @@ const Notes = () => {
     
     return (  
         <div className="container">
-            <p>Welcome, {user?.name}!</p>
-            <button onClick={handleSignOut}>Sign out</button>
+            
         </div>
     );
 }

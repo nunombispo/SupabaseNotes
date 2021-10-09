@@ -10,8 +10,8 @@ export function App() {
   return (
     <div>
       <AuthProvider>
-        <Header/>
-        <Router>       
+        <Router>   
+          <Header/>    
           <Switch>
             <PrivateRoute exact path="/" component={Notes} />
             <Route path="/signup" component={Signup} />
