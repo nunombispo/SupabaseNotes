@@ -9,16 +9,16 @@ import { PrivateRoute } from './PrivateRoute'
 export function App() {
   return (
     <div>
-      <Header/>
-      <Router>
-        <AuthProvider>
+      <AuthProvider>
+        <Header/>
+        <Router>       
           <Switch>
             <PrivateRoute exact path="/" component={Notes} />
             <Route path="/signup" component={Signup} />
             <Route path="/signin" component={Signin} />
-          </Switch>
-        </AuthProvider>
-      </Router>
+          </Switch>       
+        </Router>
+      </AuthProvider>
     </div>
   )
 }
