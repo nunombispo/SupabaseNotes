@@ -3,6 +3,7 @@ import { AuthProvider } from '../contexts/Auth'
 import Header from './Header'
 import Notes from './Notes'
 import { Signup } from './SignUp'
+import { Signin } from './SignIn'
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
           <Switch>
             <Route exact path="/" component={Notes} />
             <Route path="/signup" component={Signup} />
+            <Route path="/signin" component={Signin} />
           </Switch>
         </AuthProvider>
       </Router>
